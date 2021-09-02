@@ -1,1 +1,1 @@
-# react-heroes-app-and-testing
+# HeroesApp and testing
