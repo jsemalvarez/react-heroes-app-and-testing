@@ -8,11 +8,10 @@ export const PrivateRoutes = ({
     component: Component,
     ...rest
 }) => {
-    console.log(rest)
     return (
         <Route 
             { ...rest }
-            component={ (props) => { //NOTA 1:              
+            component={ (props) => { //NOTA 1             
                 return ( isAuthenticated )
                     ? ( <Component { ...props } /> )
                     : ( <Redirect to="/login" /> )
